@@ -1,0 +1,9 @@
+{
+	"name": "match",
+	"match": {
+		"id": "/match",
+		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+		"name": "match Name"
+	}
+}

@@ -1,0 +1,40 @@
+<div class="container-new">
+	<h1>{{{translate(" Rohovskanika.Team")}}}</h1>
+	<a href="#page-sample" class="btn btn-circle page-scroll">
+		<i class="fa fa-angle-double-down animated"></i>
+	</a>
+
+	<!-- Page Sample Section -->
+	<section id="page-sample">
+			<div class="container content-section text-center">
+				<div class="row">
+                    <div class="polosar" style="padding: 20px; border-radius: 20px;">
+					{% for team in teams %}
+					<h4 class="card-title" style="color: rgb(92, 90, 70)">
+						{{{team.name}}}
+					</h4>
+					<div class="item" style="margin-bottom: 20px">
+						<a href="/team/{{{team.id}}}">
+							<img
+								src="{{{team.thumb}}}"
+								alt="{{{team.name}}}"
+								style="
+									min-height: 250px;
+									min-width: 200px;
+									max-height: 300px;
+									object-fit: cover;
+									border-radius: 50px;
+								"
+							/>
+						</a>
+						<p style="margin-top: 20px; color: rgb(0, 0, 0)">
+							{{{team.short}}}
+						</p>
+					</div>
+					<hr />
+					{% endfor %}
+                </div>
+				</div>
+			</div>
+	</section>
+</div>

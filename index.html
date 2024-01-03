@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{{{title}}}</title>
+	<meta itemprop="name" content="{{{title}}}" />
+	<meta name="twitter:title" content="{{{title}}}" />
+	<meta property="og:title" content="{{{title}}}" />
+
+	<meta name="description" content="{{{description}}}" />
+	<meta itemprop="description" content="{{{description}}}" />
+	<meta name="twitter:description" content="{{{description}}}" />
+	<meta property="og:description" content="{{{description}}}" />
+
+	<meta itemprop="image" content="{{{image}}}" />
+	<meta name="twitter:image:src" content="{{{image}}}" />
+	<meta property="og:image" content="{{{image}}}" />
+
+	<base href="/" />
+	<link rel="icon" type="image/x-icon" href="/rohovskanika/img/favicon.ico" />
+
+	<link rel="stylesheet" href="/rohovskanika/css/owl.carousel.css">
+	<link rel="stylesheet" href="/rohovskanika/css/owl.theme.default.min.css">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="/rohovskanika/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Custom CSS -->
+	<link href="/rohovskanika/css/theme.css" rel="stylesheet" />
+	<!-- Custom Fonts -->
+	<link href="/rohovskanika/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		:root {
+				--primary_color: {{{variables.primary_color || "#d9ff00"}}};
+			}
+			body {
+	           width: 100%;
+	           height: 100%;
+	           font-family: sans-serif;
+	           color: #fff;
+			   background: url({{{variables.bg_section}}})center;
+			   background-attachment: fixed;
+		       background-repeat: no-repeat;
+	          font-weight: 300;
+}
+		.intro {
+			width: 100%;
+	        padding: 400px 0 350px 0;
+	        color: #ffffff;
+			background-attachment: fixed;
+		    background-repeat: no-repeat;
+			background-size:cover ;
+			background: url({{{variables.intro_bg}}});
+		}
+		
+		
+
+	</style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand page-scroll" href="/" style="padding-top:25px">
+					{{{variables.logo_text}}}
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					<li style="padding-top:10px">
+						<a href="/articles">Новини</a>
+					</li>
+					<li style="padding-top:10px">
+						<a href="/matches">Матчі</a>
+					</li>
+					<li style="padding-top:10px">
+						<a href="/tournaments">Турніри</a>
+					</li>
+					<li style="padding-top:10px">
+						<a href="/teams">Команди</a>
+					</li>
+					<li style="padding-top:10px">
+						<a href="/portfolios">Медіа</a>
+					</li>
+					<li style="padding-top:10px">
+						<a href="/products">Магазин</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- /.navbar-collapse -->
+		</div>
+		
+		<!-- /.container -->
+	</nav>
+	<!-- Intro Header -->
+
+	<main class="main-section">
+		<!-- HTML -->
+	</main>
+
+	<!-- Footer -->
+	<footer class="text-center text-lg-start text-white" style="background-color: #0d0d0d">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+			<!-- Section: Links -->
+			<section class="">
+				<!--Grid row-->
+				<div class="row">
+					<!--Grid column-->
+					<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase">
+							<div class="logo">
+								<div class="logo-ft scroll-top"><em>{{{variables.logo_text}}}</em></div>
+							</div>
+						</h5>
+
+						<p class="logo">
+							{{{variables.ceo_text}}}
+						</p>
+					</div>
+					<!--Grid column-->
+
+					<!--Grid column-->
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase"><a href="/articles"></a>Новини</h5>
+
+						<ul class="list-unstyled mb-0">
+							{% for article in articles %}
+							<li>
+								<a href="/article/{{{article.id}}}">{{{article.name}}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<!--Grid column-->
+
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase"><a href="/matches">Матчі</a></h5>
+
+						<ul class="list-unstyled mb-0">
+							{% for match in matches %}
+							<li>
+								<a href="/match/{{{match.id}}}">{{{match.name}}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase"><a href="/portfolios">Медіа</a></h5>
+
+						<ul class="list-unstyled mb-0">
+							{% for portfolio in portfolios %}
+							<li>
+								<a href="/portfolio/{{{portfolio.id}}}">{{{portfolio.name}}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<!--Grid column-->
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase"><a href="/products">Магазин</a></h5>
+
+						<ul class="list-unstyled mb-0">
+							{% for product in products %}
+							<li>
+								<a href="/product/{{{product.id}}}">{{{product.name}}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<!--Grid column-->
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase"><a href="/teams">Команди</a></h5>
+						<ul class="list-unstyled mb-0">
+							{% for service in services %}
+							<li>
+								<a href="/service/{{{service.id}}}">{{{service.name}}}</a>
+							</li>
+							{% endfor %}
+					</div>
+					<!--Grid column-->
+
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h5 class="text-uppercase"><a href="/tournaments">Турніри</a></h5>
+						<ul class="list-unstyled mb-0">
+							{% for tournament in tournaments %}
+							<li>
+								<a href="/tournament/{{{tournament.id}}}">{{{tournament.name}}}</a>
+							</li>
+							{% endfor %}
+					</div>
+					<!--Grid column-->
+
+
+				</div>
+				<!--Grid row-->
+			</section>
+			<!-- Section: Links -->
+
+			<hr class="mb-4" />
+
+			<!-- Section: Social media -->
+			<div class="connect-us">
+				<a href="{{{variables.link_telegram}}}"><i class="fa fa-location-arrow"></i></a>
+				<a href="{{{variables.link_facebook}}}"><i class="fa fa-facebook"></i></a>
+				<a href="{{{variables.link_instagram}}}"><i class="fa fa-instagram"></i></a>
+				</li>
+			</div>
+		</div>
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); padding: 20px;">
+				© 2023 Copyright:
+				<a class="text-white" href="https://webart.work/">WAW</a>
+			</div>
+			<!-- Copyright -->
+	</footer>
+	<!-- jQuery -->
+	<script src="/rohovskanika/js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/rohovskanika/js/bootstrap.min.js"></script>
+	<!-- Plugin JavaScript -->
+	<script src="/rohovskanika/js/jquery.easing.min.js"></script>
+	<!-- Custom Theme JavaScript -->
+	<script src="/rohovskanika/js/theme.js"></script>
+	<!-- Slider JavaScript -->
+	<script src="/rohovskanika/js/slider.js"></script>
+
+	<script src="/rohovskanika/js/owl.carousel.min.js"></script>
+	<script src="/rohovskanika/js/smoothscroll.js"></script>
+	<script src="/rohovskanika/js/custom.js"></script>
+
+</body>
+
+</html>

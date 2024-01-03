@@ -1,0 +1,166 @@
+{
+  "title": "Welcome to waw Template",
+  "description": "description",
+  "keywords": "keywords",
+	"prefix": "/rohovskanika",
+  "picture": "picture",
+  "author": "author",
+  "moderators": [],
+  "scss": "scss/index.scss",
+  "variables": {
+		"primary_color": "#d9ff00;",
+		"video": "/rohovskanika/img/cybersport.video.mp4",
+		"ceo_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+		"logo_text": "CyberSport",
+		"intro_bg": "/rohovskanika/img/cyberperson.jpg",
+		"bg_section": "/rohovskanika/img/cyber_bg2.jpg",
+		"land_head_text": "CyberSport",
+		"land_head_text2": "Conquer the Peaks of eSports with Us!",
+		"link_instagram": "https://instagram.com/kpcity2023?igshid=OGQ5ZDc2ODk2ZA==",
+		"link_facebook": "https://www.facebook.com/profile.php?id=100094157589278",
+		"link_telegram": "https://t.me/wawkpcity"
+	},
+  "footer": {
+    "portfolios": [
+      {
+        "id": "/portfolio",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "portfolio"
+      },
+      {
+        "id": "/portfolio",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "portfolio"
+      },
+      {
+        "id": "/portfolio",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "portfolio"
+      },
+      {
+        "id": "/portfolio",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "portfolio"
+      }
+    ],
+    "products": [
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "product"
+      },
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "product"
+      },
+      {
+        "id": "/product",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "product"
+      }
+    ],
+    "services": [
+      {
+        "id": "/service",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "service"
+      },
+      {
+        "id": "/service",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "service"
+      },
+      {
+        "id": "/service",
+        "price": 1200,
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "service"
+      }
+    ],
+    "articles": [
+      {
+        "id": "/article",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "article"
+      },
+      {
+        "id": "/article",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "article"
+      },
+      {
+        "id": "/article",
+        "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "name": "article"
+      }
+    ]
+  },
+  "tags": [
+		{
+			"category": {
+				"group": "article"
+			},
+			"name": "Tag one"
+		},
+		{
+			"category": {
+				"group": "matche"
+			},
+			"name": "Tag one"
+		},
+    {
+			"category": {
+				"group": "portfolio"
+			},
+			"name": "Tag one"
+		},
+    {
+			"category": {
+				"group": "product"
+			},
+			"name": "Tag one"
+		},
+    {
+			"category": {
+				"group": "service"
+			},
+			"name": "Tag one"
+		},
+    {
+			"category": {
+				"group": "tournament"
+			},
+			"name": "Tag one"
+		}
+	],
+	"groups": [
+		{
+			"categories": [
+				{
+					"name": "Category Name",
+					"tags": [
+						{
+							"name": "Tag Name"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

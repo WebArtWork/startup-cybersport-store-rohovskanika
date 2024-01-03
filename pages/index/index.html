@@ -1,0 +1,172 @@
+<header class="intro">
+	<div class="intro-body">
+		<div class="intro-all">
+			<h1 class="brand-heading">{{{variables.land_head_text}}}</h1>
+			<p class="intro-text">
+				{{{variables.land_head_text2}}}
+			</p>
+		</div>
+	</div>
+	</div>
+</header>
+
+<section id="page-sample">
+	{% if articles.length %}
+	<div class="polosa">
+		<div class="container content-section">
+			<h3>Новини</h3>
+				{% for article in articles %}
+					<a href="/articles">
+						<div class="card">
+							<img src="{{{article.thumb}}}" alt="{{{article.name}}}" style="
+							width: 350px;
+							height: 290px;
+							object-fit: cover; border-radius: 50px;">
+							<div class="card-body">
+								<h4 class="card-title">{{{article.name}}}</h4>
+								<p class="text-as" style="margin-bottom: 15px;">{{{article.short}}} </p>
+							</div>
+						</div>
+					</a>
+					<hr />
+				{% endfor %}
+		</div>
+	</div>
+	{% endif %}
+	{% if matches.length %}
+	<div class="polosa">
+		<div class="container content-section">
+			<h3>Матчі</h3>
+				{% for match in matches %}
+					<a href="/matchs">
+						<div class="card">
+							<img src="{{{match.thumb}}}" alt="{{{match.name}}}" style="
+							width: 350px;
+							height: 290px;
+							object-fit: cover; border-radius: 50px;">
+							<div class="card-body">
+								<h5 class="card-title">{{{matche.name}}}</h5>
+								<p class="text-sas" style="margin-bottom: 15px;">{{{match.short}}} </p>
+							</div>
+						</div>
+					</a>
+					<hr />
+				{% endfor %}
+		</div>
+	</div>
+	{% endif %}
+	{% if tournaments.length %}
+	<div class="polosa">
+		<div class="container content-section">
+			<h3>Турніри</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+			<div class="owl-carousel owl-theme owl-courses">
+				{% for tournament in tournaments %}
+				<a href="/tournaments">
+					<div class="item" style="padding-right: 20px;">
+						<div class="courses-thumb">
+							<div class="courses-top">
+								<div class="courses-image">
+									<img src="{{{tournament.thumb}}}" alt="{{{tournament.name}}}" style="
+									width: 350px;
+									height: 290px;
+									object-fit: cover; border-radius: 50px;">
+									<h4 class="card-title">{{{tournament.name}}}</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	{% if teams.length %}
+	<div class="polosa">
+		<div class="container content-section">
+			<h3>Команди</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+			<div class="row">
+				{% for team in teams %}
+				<div class="col-md-4">
+					<a href="/teams">
+						<div class="card">
+							<img src="{{{team.thumb}}}" alt="{{{team.name}}}" style="
+							width: 350px;
+							height: 290px;
+							object-fit: cover; border-radius: 50px;">
+							<div class="card-body">
+								<h4 class="card-title">{{{team.name}}}</h4>
+								<p class="text-as">{{{team.short}}}</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	{% if portfolios.length %}
+	<div class="polosa">
+		<div class="container content-section">
+			<h3> Медіа </h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+			<div class="owl-carousel owl-theme owl-courses">
+				{% for portfolio in portfolios %}
+				<a href="/portfolios">
+					<div class="item">
+						<div class="courses-thumb">
+							<div class="courses-top">
+								<div class="courses-image">
+									<img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}" style="
+									width: 350px;
+									height: 290px;
+									object-fit: cover; border-radius: 50px;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	{% if products.length %}
+	<div class="polosa">
+		<div class="container content-section">
+			<h3>Магазин</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+			<div class="row">
+				{% for product in products %}
+				<div class="col-md-4">
+					<a href="/products">
+						<div class="card">
+							<img src="{{{product.thumb}}}" alt="{{{product.name}}}" style="
+							width: 350px;
+							height: 290px;
+							object-fit: cover; border-radius: 50px;">
+							<div class="card-body">
+								<h4 class="card-title">{{{product.name}}}</h4>
+								<p class="text-as">{{{product.short}}}</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	
+	<div class="polosa">
+		{% if variables.video %}
+		<video controls class="video">
+			<source src="{{{variables.video}}}" type="video/mp4">
+		</video>
+		{% endif %}
+	</div>
+	
+</section>

@@ -1,0 +1,11 @@
+{
+	"name": "team",
+	"team": {
+		"id": "/team",
+		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+		"thumbs": ["https://neryxomka.com/template/img/welcome.png"],
+		"name": "team Name"
+	}
+}
